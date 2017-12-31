@@ -1,0 +1,38 @@
+{
+  "name": "level-up-alexa-skill",
+  "version": "1.0.14",
+  "description": "An Alexa Skill.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "build": "npm version patch && gulp zip",
+    "test": "mocha --opts ./mocha.opts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrprim/LevelUpAlexa.git"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "fact"
+  ],
+  "author": "Sergio Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrprim/LevelUpAlexa/issues"
+  },
+  "homepage": "https://github.com/mrprim/LevelUpAlexa#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "random-rpg-stuff": "^0.0.20"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.7.0",
+    "gulp-zip": "^4.0.0",
+    "mocha": "^3.5.0",
+    "mocha-spectrum-reporter": "^1.0.3"
+  }
+}
